@@ -1,0 +1,65 @@
+System version: 3.7.7 (default, May  7 2020, 21:25:33) 
+[GCC 7.3.0]
+Tensorflow version: 1.15.0
+start experiment
+I am feedDualFactor
+
+True
+2
+attn (?, 2, 2, 300, 300)
+mask (?, 2, 2, 300, 300)
+weight Long Bpr
+['']
+[1, 1, 1, 1]
+log_loss
+restrict prediction
+shs
+Time cost for testing is 6.01 mins
+kuaishou-SASRec
+{'auc': 0.8475, 'logloss': 0.2949, 'mean_mrr': 0.6377, 'ndcg@2': 0.5809, 'ndcg@4': 0.6788, 'ndcg@6': 0.7122, 'ndcg@8': 0.7233, 'ndcg@10': 0.7264, 'wauc': 0.8436}
+Traceback (most recent call last):
+  File "sequential.py", line 48, in <module>
+    from reco_utils.recommender.deeprec.models.sequential.dfn import DFN
+  File "../../reco_utils/recommender/deeprec/models/sequential/dfn.py", line 18, in <module>
+    class DFN(SequentialBaseModel):
+NameError: name 'SequentialBaseModel' is not defined
+Traceback (most recent call last):
+  File "sequential.py", line 48, in <module>
+    from reco_utils.recommender.deeprec.models.sequential.dfn import DFN
+  File "../../reco_utils/recommender/deeprec/models/sequential/dfn.py", line 18, in <module>
+    class DFN(SequentialBaseModel):
+NameError: name 'SequentialBaseModel' is not defined
+System version: 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
+[GCC 7.3.0]
+Tensorflow version: 1.13.1
+start experiment
+I am DFN
+Traceback (most recent call last):
+  File "sequential.py", line 1453, in <module>
+    app.run(main)
+  File "/usr/local/anaconda3/envs/tf-1.13-py3/lib/python3.6/site-packages/absl/app.py", line 300, in run
+    _run_main(main, args)
+  File "/usr/local/anaconda3/envs/tf-1.13-py3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "sequential.py", line 1362, in main
+    modelA = get_model(flags_obj, model_pathA, summary_pathA, pretrain_pathA, finetune_path, user_vocab, item_vocab, cate_vocab, train_num_ngs, data_path)
+  File "sequential.py", line 558, in get_model
+    model = SASRecFeedDualModel(hparams, input_creator, seed=RANDOM_SEED)
+NameError: name 'SASRecFeedDualModel' is not defined
+System version: 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
+[GCC 7.3.0]
+Tensorflow version: 1.13.1
+start experiment
+I am DFN
+Traceback (most recent call last):
+  File "sequential.py", line 1453, in <module>
+    app.run(main)
+  File "/usr/local/anaconda3/envs/tf-1.13-py3/lib/python3.6/site-packages/absl/app.py", line 300, in run
+    _run_main(main, args)
+  File "/usr/local/anaconda3/envs/tf-1.13-py3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "sequential.py", line 1362, in main
+    modelA = get_model(flags_obj, model_pathA, summary_pathA, pretrain_pathA, finetune_path, user_vocab, item_vocab, cate_vocab, train_num_ngs, data_path)
+  File "sequential.py", line 558, in get_model
+    model = SASRecFeedDualModel(hparams, input_creator, seed=RANDOM_SEED)
+NameError: name 'SASRecFeedDualModel' is not defined
